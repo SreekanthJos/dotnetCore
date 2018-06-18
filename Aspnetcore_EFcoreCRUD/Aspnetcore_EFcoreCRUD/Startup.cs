@@ -16,9 +16,18 @@ namespace MyUniversity
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IHostingEnvironment env)
         {
-            Configuration = configuration;
+            //Configuration = configuration;
+            // Configuration.AddJ
+
+            var builder = new ConfigurationBuilder()
+        .SetBasePath(env.ContentRootPath)
+        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+        .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+        .AddEnvironmentVariables();
+            this.Configuration = builder.Build();
+
         }
 
         public IConfiguration Configuration { get; }

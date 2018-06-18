@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Aspnetcore_EFcoreCRUD/Aspnetcore_EFcoreCRUD/bin/Debug/netcoreapp2.1
+/Aspnetcore_EFcoreCRUD/.vs
+/Aspnetcore_EFcoreCRUD/Aspnetcore_EFcoreCRUD/obj
+/Aspnetcore_EFcoreCRUD/Aspnetcore_EFcoreCRUD/AspnetMvcCore_EFCore_CRUD.csproj.user

@@ -29,7 +29,7 @@ namespace MyUniversity
                 try
                 {
                     var context = services.GetRequiredService<MyUniversityContext>();
-                    DbInitializer.Initialize(context);
+                  //  DbInitializer.Initialize(context);
                 }
                 catch (Exception ex)
                 {
